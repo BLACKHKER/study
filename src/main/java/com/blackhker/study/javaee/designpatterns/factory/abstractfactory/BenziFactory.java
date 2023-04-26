@@ -1,4 +1,4 @@
-package com.blackhker.study.designpatterns.abstractfactory;
+package com.blackhker.study.javaee.designpatterns.factory.abstractfactory;
 
 /**
  * @Author BLACKHKER

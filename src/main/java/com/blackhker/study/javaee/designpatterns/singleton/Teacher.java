@@ -1,4 +1,6 @@
-package com.blackhker.study.designpatterns.singleton;
+package com.blackhker.study.javaee.designpatterns.singleton;
+
+import org.junit.Test;
 
 /**
  * @Author BLACKHKER
@@ -65,6 +67,19 @@ public class Teacher {
 
     public static Teacher getTeacher4() {
         return TeacherContainer.teacher;
+    }
+
+    @Test
+    public void test() {
+        // 创建多线程检测
+        for (int i = 0; i < 10; i++) {
+            new Thread(new Runnable() {
+                @Override
+                public void run() {
+                    System.out.println(getTeacher1());
+                }
+            }).run();
+        }
     }
 
 }
