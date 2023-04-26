@@ -7,7 +7,7 @@ package com.blackhker.study.javase.thread;
  * @Description: 线程等待、线程休眠的区别
  * @Version 1.0
  */
-public class WaitSleepTest {
+public class WaitAndSleep {
 
     public static void main(String[] args) {
 
