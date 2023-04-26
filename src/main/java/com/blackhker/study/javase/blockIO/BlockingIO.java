@@ -1,4 +1,4 @@
-package com.blackhker.study.javase.block;
+package com.blackhker.study.javase.blockIO;
 
 import java.io.IOException;
 import java.io.InputStream;
