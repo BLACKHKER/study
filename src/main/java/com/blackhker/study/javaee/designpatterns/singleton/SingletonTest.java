@@ -10,5 +10,15 @@ package com.blackhker.study.javaee.designpatterns.singleton;
 public class SingletonTest {
     public static void main(String[] args) {
 
+        // 创建多线程检测
+        for (int i = 0; i < 10; i++) {
+            new Thread(new Runnable() {
+                @Override
+                public void run() {
+                    System.out.println(Teacher.getTeacher3());
+                }
+            }).run();
+        }
+
     }
 }

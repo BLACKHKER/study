@@ -43,7 +43,7 @@ public class Teacher {
     // double-checked locking，双检锁，优化性能
     public static Teacher getTeacher3() {
         if (teacher == null) {
-            synchronized (teacher) {
+            synchronized (Teacher.class) {
                 if (teacher == null) {
                     teacher = new Teacher();
                 }
@@ -67,19 +67,6 @@ public class Teacher {
 
     public static Teacher getTeacher4() {
         return TeacherContainer.teacher;
-    }
-
-    @Test
-    public void test() {
-        // 创建多线程检测
-        for (int i = 0; i < 10; i++) {
-            new Thread(new Runnable() {
-                @Override
-                public void run() {
-                    System.out.println(getTeacher1());
-                }
-            }).run();
-        }
     }
 
 }
