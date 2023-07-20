@@ -1,4 +1,4 @@
-package com.blackhker.study.javaee.designpatterns.singleton;
+    package com.blackhker.study.javaee.designpatterns.singleton;
 
 import org.junit.Test;
 
